@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio-PrashantFawade</title>
-    <link rel="icon" href="./assets/portfolio.png" type="image/x-icon">
+    <link rel="icon" href="https://res.cloudinary.com/dappyiksi/image/upload/v1711691172/user_e19glg.png" type="image/x-icon">
     <link rel="stylesheet" href="portfolio.css">
 </head>
 
 <body>
-    <script src="portfolio.js"></script>
+    <script>
+        function scrollToDiv(divId) {
+            console.log(divId);
+            var element = document.getElementById(divId);
+            var parentElement = element.parentNode;
+            parentElement.scrollTop = element.offsetTop - parentElement.offsetTop;
+        }
+    </script>
     <div>
         <div class="wave"></div>
         <div class="wave"></div>
@@ -20,23 +27,23 @@
     <div class="container">
         <div class="sidebar">
             <div class="profileImage">
-                <img src="./assets/My-Image01.jpg" alt="profileImg">
+                <img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691161/My-Image01_nu9lsj.jpg" alt="profileImg">
             </div>
 
             <h4 class="name">Prashant Suryakant Fawade
                 <p class="roll"> MEAN Fullstack Developer | UI/UX Designer</p>
                 <div class="icons">
-                    <a>
-                        <img src="./assets/user.png" alt="user">
-                    </a>
-                    <a>
-                        <img src="./assets/instagram (1).png" alt="insta">
-                    </a>
-                    <a>
-                        <img src="./assets/github.png" alt="git">
+                    <a href="https://www.linkedin.com/in/prashant-fawade-p9579721620">
+                        <img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691172/user_e19glg.png" alt="user">
                     </a>
                     <a href="https://www.linkedin.com/in/prashant-fawade-p9579721620">
-                        <img src="./assets/linkedin (1).png" alt="insta">
+                        <img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691134/instagram_1_ut3xqi.png" alt="insta">
+                    </a>
+                    <a href="https://github.com/PrashantFawade">
+                        <img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691132/github_gds2dm.png" alt="git">
+                    </a>
+                    <a href="https://www.linkedin.com/in/prashant-fawade-p9579721620">
+                        <img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691137/linkedin_1_py2fh2.png" alt="linkedin">
                     </a>
                 </div>
             </h4>
@@ -44,7 +51,7 @@
             <div class="details">
 
                 <div class="content">
-                    <img src="./assets/contact.png" alt="contact">
+                    <img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691131/contact_i3g9ie.png" alt="contact">
                     <div class="text-content">
                         <div class="heading">Phone</div>
                         <div class="text">+91 9579721620</div>
@@ -52,7 +59,7 @@
                 </div>
                 <hr>
                 <div class="content">
-                    <img src="./assets/mail.png" alt="email">
+                    <img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691982/mail_pccual.png" alt="email">
                     <div class="text-content">
                         <div class="heading">Email</div>
                         <div class="text">prashantfawade2017@gmail.com</div>
@@ -60,7 +67,7 @@
                 </div>
                 <hr>
                 <div class="content">
-                    <img src="./assets/location.png" alt="location">
+                    <img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691974/location_cvypa2.png" alt="location">
                     <div class="text-content">
                         <div class="heading">Location</div>
                         <div class="text">Pune, Maharashtra</div>
@@ -68,7 +75,7 @@
                 </div>
                 <hr>
                 <div class="content">
-                    <img src="./assets/calendar.png" alt="dob">
+                    <img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691950/calendar_ha1fz2.png" alt="dob">
                     <div class="text-content">
                         <div class="heading">Date Of Birth</div>
                         <div class="text">04 February 2000</div>
@@ -78,59 +85,269 @@
         </div>
 
         <div class="navbar">
-            <!-- <h1>Prashant </h1> -->
             <div class="nav-link">
                 <div class="nav">
-                    <div class="nav-content">
-                        <div class="nav-image"><img src="./assets/student.png" alt="user"></div>
+                    <div class="nav-content" id="About" onclick="scrollToDiv('About')">
+                        <div class="nav-image"><img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711692130/student_qtnscs.png" alt="user"></div>
                         <div class="nav-heading">About</div>
                     </div>
 
-                    <div class="nav-content">
-                        <div class="nav-image"><img src="./assets/work-injury.png" alt="user"></div>
+                    <div class="nav-content" id="Skills" onclick="scrollToDiv('Skills')">
+                        <div class="nav-image"><img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691173/work-injury_j6qjgs.png" alt="user"></div>
                         <div class="nav-heading">Skills</div>
                     </div>
 
-                    <div class="nav-content">
-                        <div class="nav-image"><img src="./assets/management.png" alt="user"></div>
+                    <div class="nav-content" id="Projects" onclick="scrollToDiv('Projects')">
+                        <div class="nav-image"><img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691985/management_vlhcri.png" alt="user"></div>
                         <div class="nav-heading">Projects</div>
                     </div>
 
-                    <div class="nav-content">
-                        <div class="nav-image"><img src="./assets/careers.png" alt="user"></div>
+                    <div class="nav-content" id="Experience" onclick="scrollToDiv('Experience')">
+                        <div class="nav-image"><img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691951/careers_pbtkcu.png" alt="user"></div>
                         <div class="nav-heading">Experience</div>
                     </div>
 
-                    <div class="nav-content">
-                        <div class="nav-image"><img src="./assets/connection.png" alt="user"></div>
+                    <div class="nav-content" id="Experience" onclick="scrollToDiv('Experience')">
+                        <div class="nav-image"><img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691967/graduate_wxjcsd.png" alt="user"></div>
+                        <div class="nav-heading">Education</div>
+                    </div>
+
+                    <div class="nav-content" id="Connect" onclick="scrollToDiv('Connect')">
+                        <div class="nav-image"><img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691960/connection_djruuq.png" alt="user"></div>
                         <div class="nav-heading">Connect</div>
                     </div>
-                    <span class="portfolioImg"> My Portfolio
-                        <img src="./assets/portfolio.png" alt="portfolio">
+                    <span class="portfolioImg">Portfolio
+                        <img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691168/portfolio_dlml72.png" alt="portfolio">
                     </span>
                 </div>
             </div>
         </div>
 
         <div class="mainContent">
-            <div class="menu">
-                <h2>About &nbsp; <span></span></h2>
+            <div class="menu" id="About">
+                <h2>About Myself &nbsp; <span></span></h2>
+                <div class="data">
+                    <p>I develop web application using MEAN stack & have keen interest in UI/UX design.which includes
+                        Angular, React Frontend and NodeJS, ExpressJS for backend development.
+                        I am passionate about web development and enjoy solving problems with innovative and creative
+                        solutions.I value collborations, feedback and continuous improvement.
+                        I always willing to have a part of a team of talented developers, who scale up technologies,
+                        mentor trainees and deliver high-quality products to clients. Please don
+                        't hesitate to reach out.</p>
+                </div>
+                <h2>Technical Skills &nbsp; <span></span></h2>
+                <div class="techSkills">
+                    <span class="skill">Angular</span>
+                    <span class="skill">React</span>
+                    <span class="skill">Javascript</span>
+                    <span class="skill">Typescript</span>
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">Bootstrap</span>
+                    <span class="skill">NodeJS</span>
+                    <span class="skill">ExpressJS</span>
+                    <span class="skill">MongoDB</span>
+                    <span class="skill">Mongoose</span>
+                    <span class="skill">MySQL</span>
+                    <span class="skill">AWS</span>
+                    <span class="skill">Java</span>
+                    <span class="skill">Learning new technologies</span>
+                    <span class="skill">etc.</span>
+                </div>
             </div>
             <hr>
-            <div class="menu">
-                <h2>Skills &nbsp; <span></span></h2>
+            <div class="menu" id="Skills">
+                <h2>Working Skills &nbsp; <span></span></h2>
+                <div class="Skilldata">
+
+
+                    <div class="card">
+                        <div class="header">
+                            <img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691125/coding_1_oe6xqf.png" alt="location">
+                            <h5>Web Development</h5>
+                        </div>
+                        <p class="percentage">90%</p><br>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"></div>&nbsp;
+                        </div>
+                        <div class="card-content">
+                            “Proficient in Web Development with 80-90% progress. Expertise in front-end and back-end technologies. Committed to continuous learning and staying updated.”
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="header">
+                            <img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711690296/ui-ux_nncdii.png" alt="location">
+                            <h5>UI/UX Design</h5>
+                        </div>
+                        <p class="percentage">60%</p><br>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%;background-color: #4c5bfa;"></div>&nbsp;
+                        </div>
+                        <div class="card-content">
+                            “Progressed 60-70% in UI/UX Design, acquiring a strong foundation in user-centric design principles. Committed to continuous learning and staying abreast of industry trends.”
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="header">
+                            <img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691159/mobile-coding_zcv7cx.png" alt="location">
+                            <h5>App Development</h5>
+                        </div>
+                        <p class="percentage">80%</p><br>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;background-color: rgb(248, 74, 74);"></div>&nbsp;
+                        </div>
+                        <div class="card-content">
+                            “Attained 80-90% proficiency in App Development, mastering both iOS and Android platforms. Committed to continuous learning and staying updated with the latest technologies.”
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="header">
+                            <img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691157/message-code_i4xapu.png" alt="location">
+                            <h5>Web Design</h5>
+                        </div>
+                        <p class="percentage">75%</p><br>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;background-color: #ff8725;"></div>&nbsp;
+                        </div>
+                        <div class="card-content">
+                            “Progressed 70-80% in Web Design, gaining strong skills in creating user-friendly and aesthetically pleasing websites. Committed to continuous learning and staying updated with design trends.”
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
             <hr>
-            <div class="menu">
+            <div class="menu" id="Projects">
                 <h2>Projects &nbsp; <span></span></h2>
+                <div class="Projectdata">
+                    <div class="project">
+                        <!-- <video controls>
+                            <source src="./assets/Recording-tTalk-Chatbot.mp4" type="video/mp4">
+                        </video> -->
+                        <img id="proImg" src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691165/Photo-Bot_mhgczj.png" alt="chatbot">
+                        <h4>ChatBot Development &nbsp;&nbsp;<img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691132/github_gds2dm.png" alt="GitIcon"></h4>
+                        <p class="description">Frontend Development (100%) &nbsp;  Backend Development (70%)</p>
+                    </div>
+                    <div class="project">
+                        <!-- <video controls>
+                            <source src="./assets/Recording -Employee Management Hub.mp4" type="video/mp4">
+                        </video> -->
+                        <img id="proImg" src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691166/Photo-Emp_s2n3lp.png" alt="Emp">
+                        <h4>Employee Management Hub &nbsp;&nbsp;<img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691132/github_gds2dm.png" alt="GitHub Icon"></h4>
+                        <p class="description">Frontend Development (100%) &nbsp;  Backend Development (100%)</p>
+                    </div>
+                    <div class="project">
+                        <!-- <video controls>
+                            <source src="./assets/Recording-Indigo Airlines.mp4" type="video/mp4">
+                        </video> -->
+                        <img id="proImg" src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691164/Photo-Airline_wf2yv1.png" alt="airlines">
+                        <h4>Airlines Ticket Booking &nbsp;&nbsp;<img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691132/github_gds2dm.png" alt="GitHub Icon"></h4>
+                        <p class="description">Frontend Development (100%) &nbsp;  Backend Development (100%)</p>
+                    </div>
+                    <div class="project">
+                        <!-- <video controls>
+                            <source src="./assets/Recording-FoodoFest.mp4" type="video/mp4">
+                        </video> -->
+                        <img id="proImg" src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691166/Photo-food_uh3rvf.png" alt="food">
+                        <h4>Food Delivery App &nbsp;&nbsp;<img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691132/github_gds2dm.png" alt="GitHub Icon"></h4>
+                        <p class="description">Frontend Development (100%) &nbsp;  Backend Development (100%)</p>
+                    </div>
+                    <div class="project">
+                        <!-- <video controls>
+                            <source src="./assets/Recording-PharmaX.mp4" type="video/mp4">
+                        </video> -->
+                        <img id="proImg" src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691169/Photo-Pharma_qvu4b0.png" alt="pharma">
+                        <h4>PharmaX Store &nbsp;&nbsp;<img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691132/github_gds2dm.png" alt="GitHub Icon"></h4>
+                        <p class="description">Frontend Development (100%) &nbsp; Backend Development (90%)</p>
+                    </div>
+                    <div class="project">
+                        <!-- <video controls>
+                            <source src="./assets" type="video/mp4">
+                        </video> -->
+                        <img id="proImg" src="https://res.cloudinary.com/dappyiksi/image/upload/v1711693244/Screenshot_2024-03-29_114953_gk145o.png" alt="gemini">
+                        <h4>Gemini Pro AI Tool &nbsp;&nbsp;<img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691132/github_gds2dm.png" alt="GitHub Icon"></h4>
+                        <p class="description">Frontend Development (60%) &nbsp; Backend Development (90%)</p>
+                    </div>
+                </div>
             </div>
             <hr>
-            <div class="menu">
-                <h2>Experience &nbsp; <span></span></h2>
+            <div class="menu" id="Experience">
+                <h2>Experience & Education &nbsp;<span></span></h2>
+                <div class="Exdata">
+                    <div class="experienceDiv">
+                        <span class="n"><img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691951/careers_pbtkcu.png" alt="ex"> &nbsp;&nbsp;<b>Experience</b></span>
+                        <span class="experience">
+                            <div class="year">Nov 2022 - May 2023</div>
+                            <div class="roleP"><b>Trainee Systems Engineer</b> <span id="percent">(6 Months)</span></div>
+                            <div class="company">Infosys Limited, Mysore</div>
+                        </span>
+                        <span class="experience">
+                            <div class="year">May 2023 - present</div>
+                            <div class="roleP"><b>Systems Engineer</b> <span id="percent">(1 Years)</span></div>
+                            <div class="company">Infosys Limited, Pune</div>
+                        </span>
+                        <span class="experience">
+                            <div class="year">Present</div>
+                            <div class="roleP"><b>Systems Engineer</b> <span id="percent">Present</span></div>
+                            <div class="company">Infosys Limited, Pune</div>
+                        </span>
+                    </div>
+                    <div class="educationDiv">
+                        <span class="n"><img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691967/graduate_wxjcsd.png" alt="ex"> &nbsp;&nbsp;<b>Education</b></span>
+                        <span class="education">
+                            <div class="year">2018 - 2022</div>
+                            <div class="roleP"><b>Civil Engineering</b> <span id="percent">9.01 CGPA</span></div>
+                            <div class="company">Sinhgad collage of engineering,Pune</div>
+                        </span>
+                        <span class="education">
+                            <div class="year">2016 - 2018</div>
+                            <div class="roleP"><b>HSC - 12th</b> <span id="percent">69.23%</span></div>
+                            <div class="company">Maharashtra State Board, Latur</div>
+                        </span>
+                        <span class="education">
+                            <div class="year">2016 Passout</div>
+                            <div class="roleP"><b>SSC - 10th</b> <span id="percent">93.80%</span></div>
+                            <div class="company">Maharashtra State Board, Latur</div>
+                        </span>
+                    </div>
+
+                </div>
             </div>
             <hr>
-            <div class="menu">
+            <div class="menu" id="Connect">
                 <h2>Lets Connect &nbsp; <span></span></h2>
+                <p>I'm always open to discussing or connecting to
+                    development / design work or partnerships.</p>
+                <div class="connectiondata">
+                    <form class="vertical-form" action="https://submit-form.com/98FhVp9Nf">
+                        <label for="name">Name <span style="color: red;">*</span></label>
+                        <input id="name" name="name" type="text" placeholder="Enter Your Name" />
+                        <label for="email">Email <span style="color: red;">*</span></label>
+                        <input id="email" name="email" type="email" placeholder="Enter Your Email" />
+                        <label for="message">Message <span style="color: red;">*</span></label>
+                        <textarea id="message" name="message" cols="15" rows="3"
+                            placeholder="I value your feedback and collaborations."></textarea>
+                        <button type="submit">Submit Responce</button>
+                    </form><br>
+                    <div class="connectImg">
+                        <img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691170/undraw_Connecting_Teams_re_hno7_xjgp13.png" alt="connectImg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <footer>
+                    <div class="footer-content">
+                        <p>© 2024 Prashant Fawade. All rights reserved.</p>
+                        <ul>
+                            <li><a href="mailto:prashantfawade2017@gmail.com">Email</a></li>
+                            <li><a href="https://www.linkedin.com/in/prashant-fawade-p9579721620">LinkedIn</a></li>
+                            <li><a href="https://github.com/PrashantFawade">GitHub</a></li>
+                        </ul>
+                    </div>
+                </footer>
+
             </div>
         </div>
     </div>
