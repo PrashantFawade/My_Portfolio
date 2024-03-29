@@ -133,6 +133,10 @@ body {
     border: 1px solid black;
 }
 
+.icons a{
+    text-decoration: none;
+}
+
 .icons img:hover {
     border: 1px solid white;
     box-shadow: 5px 5px 15px orange;
@@ -797,9 +801,12 @@ h4 img:hover {
     .icons img {
         width: 10%;
         height: 10%;
-        /* margin-left: 5px; */
         border-radius: 50%;
         border: 1px solid black;
+    }
+
+    .icons a{
+        text-decoration: none;
     }
     
     .icons img:hover {
@@ -852,7 +859,7 @@ h4 img:hover {
     }
     
     .text {
-        font-size: 1em;
+        font-size: 0.9em;
         font-weight: 500;
         font-family: sans-serif;
     }
@@ -937,7 +944,7 @@ h4 img:hover {
         border-radius: 10px;
         padding: 5px;
         width: 95%;
-        height: 106.5%;
+        height: 100%;
     }
 
     .menu {
@@ -958,7 +965,7 @@ h4 img:hover {
     .menu h2 span {
         position: absolute;
         top: 50%;
-        width: 100px;
+        width: 70px;
         height: 5px;
         border-radius: 5px;
         background: linear-gradient(315deg, rgb(252, 159, 52) 3%, rgba(60, 132, 206, 1) 38%, rgba(48, 238, 226, 1) 68%, rgb(223, 69, 69) 98%);
