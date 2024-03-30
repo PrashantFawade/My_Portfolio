@@ -859,7 +859,7 @@ h4 img:hover {
     }
     
     .text {
-        font-size: 0.9em;
+        font-size: 0.75rem;
         font-weight: 500;
         font-family: sans-serif;
     }
@@ -876,7 +876,7 @@ h4 img:hover {
         /* display: none; */
         position: static;
         height: auto;
-        margin-left: 20px;
+        margin-left: 15px;
         margin-top: 6%;
         background-color: aliceblue;
         border: 1px solid black;
@@ -898,15 +898,12 @@ h4 img:hover {
         width: 90%;
         height: 50%;
         margin: 2px;
-        /* font-size: 1em; */
-        /* font-weight: lighter; */
-        /* font-family: monospace; */
     }
     
     .nav-content {
         width: 14%;
         text-wrap: wrap;
-        margin-left: 6px;
+        margin-left: 5px;
         border-radius: 7px;
         text-align: center;
         background-color: rgb(229, 239, 248);
@@ -922,11 +919,11 @@ h4 img:hover {
     }
     
     .nav-heading {
-        font-size: 0.5em;
+        font-size: 0.4rem;
         font-weight: 600;
         font-family: sans-serif;
         text-align: center;
-        padding: 2px;
+        padding: 1px;
     }
     
     .portfolioImg {
@@ -972,6 +969,10 @@ h4 img:hover {
         transform: translateY(-50%);
     }
     
+    span[id="exp"]{
+        display: none;
+    }
+
     .data {
         background-color: rgb(217, 237, 255);
         padding: 10px;
@@ -1010,7 +1011,7 @@ h4 img:hover {
     .Skilldata {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 5px;
+        /* gap: 5px; */
         background-color: rgb(217, 237, 255);
         padding: 10px;
         border-radius: 4px;
@@ -1018,9 +1019,9 @@ h4 img:hover {
     
     
     .card {
-        /* width: 350px; */
-        width: 85%;
+        width: 93%;
         padding: 10px;
+        margin-left: 0;
         background-color: rgb(252, 226, 248);
         border-radius: 10px;
         box-shadow: 2px 2px 5px rgb(135, 130, 130);
@@ -1108,7 +1109,7 @@ h4 img:hover {
     
     .project img[id="proImg"] {
         width: 90%;
-        height: 60%;
+        height: 55%;
         border-radius: 5px;
         display: block;
         margin: 0 auto;
@@ -1135,20 +1136,21 @@ h4 img:hover {
     /* ////////////////////////////////////////////////////////// */
     /* Experience & Education details */
     .Exdata {
-        padding: 10px;
         border-radius: 4px;
         display: grid;
+        width: 95%;
+        margin-left: 0;
         grid-template-columns: repeat(1, 1fr);
-        gap: 5px;
+        gap: 1px;
     }
     
     .experienceDiv {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        margin: 5px;
+        /* margin: 5px; */
         border: 0.5px solid #858080;
         border-radius: 5px;
-        padding: 10px;
+        /* padding: 10px; */
         background-color: rgb(250, 225, 192);
     }
     
@@ -1294,10 +1296,10 @@ h4 img:hover {
     
     /* Footer Styling */
     .footer {
-        height: 1%;
+        height: 1.5%;
         border-radius: 2px;
         background-color: #484646;
-        padding: 20px 0;
+        /* padding: 20px; */
         text-align: center;
     }
     
