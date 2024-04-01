@@ -531,7 +531,52 @@ h4 img:hover {
 }
 
 /* ////////////////////////////////////////////////////////// */
+/* Achievements Styling*/
+
+.achievements{
+    padding: 10px;
+    border-radius: 10px;
+    /* border: 0.5px solid #585656; */
+    /* background-color: rgb(210, 249, 151); */
+}
+
+.skills-container {
+    overflow-x: auto; 
+    scroll-behavior: unset;
+    white-space: nowrap; 
+  }
+  
+  .skill-box {
+    display: inline-block;
+    align-items: center; 
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #cd6ffc;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .certificate-icon {
+    margin-right: 2px; 
+    width: 25px; 
+    height: 25px; 
+    position: relative;
+  }
+
+  .skill-box:hover{
+    cursor: pointer;
+    border: 1px solid #ef791f;
+    box-shadow:2px 2px 7px #666;
+    background-color: rgb(179, 255, 255); 
+    transition: all ease-in-out 0.2s;
+  }
+
+/* ////////////////////////////////////////////////////////// */
 /* Experience & Education details */
+
 .Exdata {
     /* background-color: rgb(217, 237, 255);  */
     padding: 10px;
@@ -1225,6 +1270,53 @@ h4 img:hover {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: small;
     }
+
+    /* ////////////////////////////////////////////////////////// */
+/* Achievements Styling*/
+
+.achievements{
+    padding: 10px;
+    border-radius: 10px;
+    /* border: 0.5px solid #585656; */
+    /* background-color: rgb(210, 249, 151); */
+}
+
+.skills-container {
+    overflow-x: auto; 
+    scroll-behavior: unset;
+    white-space: nowrap; 
+  }
+  
+  .skill-box {
+    display: inline-block;
+    align-items: center; 
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #cd6ffc;
+    border-radius: 10px;
+    text-align: center;
+    font-size:smaller;
+    font-style: oblique;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .certificate-icon {
+    margin-right: 2px; 
+    width: 20px; 
+    height: 20px; 
+    position: relative;
+  }
+
+  .skill-box:hover{
+    cursor: pointer;
+    border: 1px solid #ef791f;
+    box-shadow:2px 2px 7px #666;
+    background-color: rgb(179, 255, 255); 
+    transition: all ease-in-out 0.2s;
+  }
+
+/* ////////////////////////////////////////////////////////// */
     
     /* //////////////////////////////////////////////////////// */
     /* Contact Form */
