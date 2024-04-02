@@ -12,11 +12,20 @@
 
 <body>
     <script>
-        function scrollToDiv(divId) {
-            console.log(divId);
-            var element = document.getElementById(divId);
-            var parentElement = element.parentNode;
-            parentElement.scrollTop = element.offsetTop - parentElement.offsetTop;
+        function scrollToSection(sectionId) {
+            console.log(sectionId);
+            const element = document.getElementById(sectionId);
+
+            if (element) {
+                const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+
+                window.scrollTo({
+                    top: elementPosition,
+                    behavior: "smooth"
+                });
+            } else {
+                console.error(`Element with ID "${sectionId}" not found.`);
+            }
         }
     </script>
     <div>
@@ -97,42 +106,42 @@
         <div class="navbar">
             <div class="nav-link">
                 <div class="nav">
-                    <div class="nav-content" id="About" onclick="scrollToDiv('About')">
+                    <div class="nav-content" id="About" onclick="scrollToSection('About')">
                         <div class="nav-image"><img
                                 src="https://res.cloudinary.com/dappyiksi/image/upload/v1711692130/student_qtnscs.png"
                                 alt="user"></div>
                         <div class="nav-heading">About</div>
                     </div>
 
-                    <div class="nav-content" id="Skills" onclick="scrollToDiv('Skills')">
+                    <div class="nav-content" id="Skills" onclick="scrollToSection('Skills')">
                         <div class="nav-image"><img
                                 src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691173/work-injury_j6qjgs.png"
                                 alt="user"></div>
                         <div class="nav-heading">Skills</div>
                     </div>
 
-                    <div class="nav-content" id="Projects" onclick="scrollToDiv('Projects')">
+                    <div class="nav-content" id="Projects" onclick="scrollToSection('Projects')">
                         <div class="nav-image"><img
                                 src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691985/management_vlhcri.png"
                                 alt="user"></div>
                         <div class="nav-heading">Projects</div>
                     </div>
 
-                    <div class="nav-content" id="Experience" onclick="scrollToDiv('Experience')">
+                    <div class="nav-content" id="Experience" onclick="scrollToSection('Experience')">
                         <div class="nav-image"><img
                                 src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691951/careers_pbtkcu.png"
                                 alt="user"></div>
                         <div class="nav-heading">Experience</div>
                     </div>
 
-                    <div class="nav-content" id="Experience" onclick="scrollToDiv('Experience')">
+                    <div class="nav-content" id="Experience" onclick="scrollToSection('Experience')">
                         <div class="nav-image"><img
                                 src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691967/graduate_wxjcsd.png"
                                 alt="user"></div>
                         <div class="nav-heading">Education</div>
                     </div>
 
-                    <div class="nav-content" id="Connect" onclick="scrollToDiv('Connect')">
+                    <div class="nav-content" id="Connect" onclick="scrollToSection('Connect')">
                         <div class="nav-image"><img
                                 src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691960/connection_djruuq.png"
                                 alt="user"></div>
@@ -397,27 +406,27 @@
                                 Infosys Certified Angular Associate
                             </div>
                             <div class="skill-box"><img
-                                src="https://res.cloudinary.com/dappyiksi/image/upload/v1711971524/certificate_1_fnpxpw.png"
-                                class="certificate-icon">
-                            Infosys Certified React Web Developer
-                        </div>
+                                    src="https://res.cloudinary.com/dappyiksi/image/upload/v1711971524/certificate_1_fnpxpw.png"
+                                    class="certificate-icon">
+                                Infosys Certified React Web Developer
+                            </div>
                         </div>
                         <div class="skill-row">
                             <div class="skill-box"><img
-                                src="https://res.cloudinary.com/dappyiksi/image/upload/v1711971524/certificate_1_fnpxpw.png"
-                                class="certificate-icon">
-                            Infosys Certified NodeJS ExpressJS Associate
-                        </div>
+                                    src="https://res.cloudinary.com/dappyiksi/image/upload/v1711971524/certificate_1_fnpxpw.png"
+                                    class="certificate-icon">
+                                Infosys Certified NodeJS ExpressJS Associate
+                            </div>
                             <div class="skill-box"><img
-                                src="https://res.cloudinary.com/dappyiksi/image/upload/v1711971524/certificate_1_fnpxpw.png"
-                                class="certificate-icon">
-                            Infosys Certified Node Developer
-                        </div>
-                        <div class="skill-box"><img
-                            src="https://res.cloudinary.com/dappyiksi/image/upload/v1711971524/certificate_1_fnpxpw.png"
-                            class="certificate-icon">
-                        Infosys Global Agile Developer
-                    </div>
+                                    src="https://res.cloudinary.com/dappyiksi/image/upload/v1711971524/certificate_1_fnpxpw.png"
+                                    class="certificate-icon">
+                                Infosys Certified Node Developer
+                            </div>
+                            <div class="skill-box"><img
+                                    src="https://res.cloudinary.com/dappyiksi/image/upload/v1711971524/certificate_1_fnpxpw.png"
+                                    class="certificate-icon">
+                                Infosys Global Agile Developer
+                            </div>
                         </div>
                         <div class="skill-row">
                             <div class="skill-box"><img
@@ -426,35 +435,35 @@
                                 Infosys Certified Front End Web Developer
                             </div>
                             <div class="skill-box"><img
-                                src="https://res.cloudinary.com/dappyiksi/image/upload/v1711971524/certificate_1_fnpxpw.png"
-                                class="certificate-icon">
-                            Infosys Certified Angular Web Developer
-                        </div>
-                        <div class="skill-box"><img
-                            src="https://res.cloudinary.com/dappyiksi/image/upload/v1711971524/certificate_1_fnpxpw.png"
-                            class="certificate-icon">
-                        Business Communication Lvel 5
-                    </div>
+                                    src="https://res.cloudinary.com/dappyiksi/image/upload/v1711971524/certificate_1_fnpxpw.png"
+                                    class="certificate-icon">
+                                Infosys Certified Angular Web Developer
+                            </div>
+                            <div class="skill-box"><img
+                                    src="https://res.cloudinary.com/dappyiksi/image/upload/v1711971524/certificate_1_fnpxpw.png"
+                                    class="certificate-icon">
+                                Business Communication Lvel 5
+                            </div>
                         </div>
                         <div class="skill-row">
                             <div class="skill-box"><img
-                                src="https://res.cloudinary.com/dappyiksi/image/upload/v1711971524/certificate_1_fnpxpw.png"
-                                class="certificate-icon">
+                                    src="https://res.cloudinary.com/dappyiksi/image/upload/v1711971524/certificate_1_fnpxpw.png"
+                                    class="certificate-icon">
                                 Certified Associate Web Architect
-                        </div>
+                            </div>
                             <div class="skill-box"><img
-                                src="https://res.cloudinary.com/dappyiksi/image/upload/v1711971524/certificate_1_fnpxpw.png"
-                                class="certificate-icon">
-                            Certified Java SE8 Developer
-                        </div>
-                        <div class="skill-box"><img
-                            src="https://res.cloudinary.com/dappyiksi/image/upload/v1711971524/certificate_1_fnpxpw.png"
-                            class="certificate-icon">
-                        Certified Digital Accessibility
-                    </div>
-                    <div class="skill-box">
-                    etc.
-                </div>
+                                    src="https://res.cloudinary.com/dappyiksi/image/upload/v1711971524/certificate_1_fnpxpw.png"
+                                    class="certificate-icon">
+                                Certified Java SE8 Developer
+                            </div>
+                            <div class="skill-box"><img
+                                    src="https://res.cloudinary.com/dappyiksi/image/upload/v1711971524/certificate_1_fnpxpw.png"
+                                    class="certificate-icon">
+                                Certified Digital Accessibility
+                            </div>
+                            <div class="skill-box">
+                                etc.
+                            </div>
                         </div>
                     </div>
                 </div>
