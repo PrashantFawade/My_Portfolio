@@ -11,23 +11,6 @@
 </head>
 
 <body>
-    <script>
-        function scrollToSection(sectionId) {
-            console.log(sectionId);
-            const element = document.getElementById(sectionId);
-
-            if (element) {
-                const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-
-                window.scrollTo({
-                    top: elementPosition,
-                    behavior: "smooth"
-                });
-            } else {
-                console.error(`Element with ID "${sectionId}" not found.`);
-            }
-        }
-    </script>
     <div>
         <div class="wave"></div>
         <div class="wave"></div>
@@ -42,7 +25,7 @@
             </div>
 
             <h4 class="name">Prashant Suryakant Fawade
-                <p class="roll"> MEAN Fullstack Developer | UI/UX Designer</p>
+                <p class="roll"></p>
                 <div class="icons">
                     <a>
                         <img src="https://res.cloudinary.com/dappyiksi/image/upload/v1711691172/user_e19glg.png"
@@ -505,6 +488,8 @@
             </div>
         </div>
     </div>
+
+    <script src="portfolio.js"></script>
 </body>
 
 </html>

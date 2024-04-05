@@ -72,6 +72,7 @@ body {
         transform: translateX(1);
     }
 }
+
 /* Main Container */
 
 .container {
@@ -111,16 +112,64 @@ body {
 }
 
 .roll {
+    background-color: inherit;
     background-color: rgb(239, 245, 245);
-    padding: 5px;
+    /* padding: 5px; */
     left: 50%;
-    border: 2px solid;
-    border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    /* border: 2px solid; */
+    /* border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); */
     border-image-slice: 1;
     text-align: center;
-    font-size: small;
-    font-weight: lighter;
+    font-size: large;
+    font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    background: linear-gradient(200deg, #ff46d7, #046cdb, #ff2d42, #2b86e8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.roll::after {
+    content: '';
+    display: inline-block;
+    width: 0.1em;
+    height: 0.9em;
+    vertical-align: middle;
+    background-color: #2b86e8;
+    animation: typing 0.7s steps(40, end), blink 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 0.5em;
+    }
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes textGradient {
+    from {
+        background-position: 0 100%;
+    }
+
+    to {
+        background-position: 200% 100%;
+    }
 }
 
 .icons img {
@@ -131,7 +180,7 @@ body {
     border: 1px solid black;
 }
 
-.icons a{
+.icons a {
     text-decoration: none;
 }
 
@@ -486,20 +535,20 @@ h4 img:hover {
 /* ////////////////////////////////////////////////////////// */
 /* Achievements Styling*/
 
-.achievements{
+.achievements {
     padding: 10px;
     border-radius: 10px;
 }
 
 .skills-container {
-    overflow-x: auto; 
+    overflow-x: auto;
     scroll-behavior: unset;
-    white-space: nowrap; 
-  }
-  
-  .skill-box {
+    white-space: nowrap;
+}
+
+.skill-box {
     display: inline-block;
-    align-items: center; 
+    align-items: center;
     padding: 5px;
     margin: 5px;
     border: 1px solid #cd6ffc;
@@ -508,22 +557,22 @@ h4 img:hover {
     font-weight: bold;
     font-style: oblique;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
+}
 
-  .certificate-icon {
-    margin-right: 2px; 
-    width: 25px; 
-    height: 25px; 
+.certificate-icon {
+    margin-right: 2px;
+    width: 25px;
+    height: 25px;
     position: relative;
-  }
+}
 
-  .skill-box:hover{
+.skill-box:hover {
     cursor: pointer;
     border: 1px solid #ef791f;
-    box-shadow:2px 2px 7px #666;
-    background-color: rgb(179, 255, 255); 
+    box-shadow: 2px 2px 7px #666;
+    background-color: rgb(179, 255, 255);
     transition: all ease-in-out 0.2s;
-  }
+}
 
 /* ////////////////////////////////////////////////////////// */
 /* Experience & Education details */
@@ -770,7 +819,7 @@ h4 img:hover {
         /* margin-top: 5%; */
         text-align: center;
     }
-    
+
     .roll {
         background-color: rgb(239, 245, 245);
         padding: 5px;
@@ -783,7 +832,7 @@ h4 img:hover {
         font-weight: lighter;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
-    
+
     .icons img {
         width: 10%;
         height: 10%;
@@ -791,23 +840,23 @@ h4 img:hover {
         border: 1px solid black;
     }
 
-    .icons a{
+    .icons a {
         text-decoration: none;
     }
-    
+
     .icons img:hover {
         border: 1px solid white;
         box-shadow: 5px 5px 15px orange;
         transition: all 0.1s ease-out;
         cursor: pointer;
     }
-    
+
     .details {
         background-color: rgb(239, 245, 245);
         border-radius: 10px;
         padding: 5px;
     }
-    
+
     .content img {
         width: 13%;
         height: 13%;
@@ -816,12 +865,12 @@ h4 img:hover {
         box-shadow: 2px 2px 5px rgb(148, 148, 148);
         margin: 2px;
     }
-    
+
     .content {
         display: flex;
         align-items: center;
     }
-    
+
     .content:hover {
         cursor: pointer;
         /* background-color: rgb(255, 217, 193); */
@@ -830,26 +879,26 @@ h4 img:hover {
         transition: all 0.4s ease-out;
         cursor: pointer;
         box-shadow: 2px 2px 5px #8b8686;
-    
+
     }
-    
+
     .text-content {
         margin-left: 10px;
         text-wrap: wrap;
     }
-    
+
     .heading {
         font-size: 1em;
         font-weight: lighter;
         font-family: monospace;
     }
-    
+
     .text {
         font-size: 0.75rem;
         font-weight: 500;
         font-family: sans-serif;
     }
-    
+
     hr {
         visibility: hidden;
     }
@@ -879,13 +928,13 @@ h4 img:hover {
         justify-content: left;
         padding: 5px;
     }
-    
+
     .nav-image img {
         width: 90%;
         height: 50%;
         margin: 2px;
     }
-    
+
     .nav-content {
         width: 14%;
         text-wrap: wrap;
@@ -895,7 +944,7 @@ h4 img:hover {
         background-color: rgb(229, 239, 248);
         box-shadow: 2px 2px 5px #585656;
     }
-    
+
     .nav-content:hover {
         cursor: pointer;
         color: #ffff;
@@ -903,7 +952,7 @@ h4 img:hover {
         box-shadow: 2px 2px 5px #fffc5e;
         transition: all 0.3s ease-out;
     }
-    
+
     .nav-heading {
         font-size: 0.4rem;
         font-weight: 600;
@@ -911,7 +960,7 @@ h4 img:hover {
         text-align: center;
         padding: 1px;
     }
-    
+
     .portfolioImg {
         display: none;
     }
@@ -936,7 +985,7 @@ h4 img:hover {
         border-radius: 5px;
         padding: 5px;
     }
-    
+
     .menu h2 {
         margin-left: 10px;
         border-radius: 5px;
@@ -944,7 +993,7 @@ h4 img:hover {
         font-size: larger;
         font-family: serif;
     }
-    
+
     .menu h2 span {
         position: absolute;
         top: 50%;
@@ -954,8 +1003,8 @@ h4 img:hover {
         background: linear-gradient(315deg, rgb(252, 159, 52) 3%, rgba(60, 132, 206, 1) 38%, rgba(48, 238, 226, 1) 68%, rgb(223, 69, 69) 98%);
         transform: translateY(-50%);
     }
-    
-    span[id="exp"]{
+
+    span[id="exp"] {
         display: none;
     }
 
@@ -965,13 +1014,13 @@ h4 img:hover {
         border-radius: 4px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
-    
+
     .techSkills {
         padding: 10px;
         width: 90%;
         height: auto;
     }
-    
+
     .skill {
         display: inline-block;
         background-color: rgb(221, 240, 240);
@@ -984,7 +1033,7 @@ h4 img:hover {
         font-family: Georgia, 'Times New Roman', Times, serif;
         border-radius: 10px;
     }
-    
+
     .skill:hover {
         cursor: pointer;
         color: #ffff;
@@ -993,7 +1042,7 @@ h4 img:hover {
         border: 1.2px solid whitesmoke;
         transition: 0.3s all ease-out;
     }
-    
+
     .Skilldata {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -1002,8 +1051,8 @@ h4 img:hover {
         padding: 10px;
         border-radius: 4px;
     }
-    
-    
+
+
     .card {
         width: 93%;
         padding: 10px;
@@ -1012,19 +1061,19 @@ h4 img:hover {
         border-radius: 10px;
         box-shadow: 2px 2px 5px rgb(135, 130, 130);
     }
-    
+
     .card:hover {
         cursor: pointer;
         box-shadow: 2px 2px 5px #403f3f;
         border: 1px solid whitesmoke;
         transition: 0.3s all ease-out;
     }
-    
+
     .header {
         display: flex;
         align-items: center;
     }
-    
+
     .header img {
         width: 10%;
         height: 10%;
@@ -1034,17 +1083,17 @@ h4 img:hover {
         margin-left: 15px;
         margin-right: 10px;
     }
-    
+
     .header h5 {
         font-weight: bold;
         margin-left: 20px;
     }
-    
+
     .percentage {
         float: right;
         font-size: small;
     }
-    
+
     .progress-bar {
         width: 100%;
         height: 7px;
@@ -1052,19 +1101,19 @@ h4 img:hover {
         margin: 10px 0;
         border-radius: 10px;
     }
-    
+
     .progress {
         height: 100%;
         background-color: #4caf50;
         border-radius: 10px;
     }
-    
+
     .card-content {
         /* margin-top: 10px; */
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: small;
     }
-    
+
     /* ///////////////////////////////////////////////////////////////////// */
     /* Projects Data */
     .Projectdata {
@@ -1076,7 +1125,7 @@ h4 img:hover {
         border-radius: 10px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
-    
+
     .project {
         padding: 10px;
         align-items: center;
@@ -1084,7 +1133,7 @@ h4 img:hover {
         border-radius: 7px;
         box-shadow: 2px 2px 5px rgb(135, 130, 130);
     }
-    
+
     /* .project video{
         width: 90%;
         height: 60%;
@@ -1092,7 +1141,7 @@ h4 img:hover {
         display: block; 
         margin: 0 auto;
     } */
-    
+
     .project img[id="proImg"] {
         width: 90%;
         height: 55%;
@@ -1100,25 +1149,25 @@ h4 img:hover {
         display: block;
         margin: 0 auto;
     }
-    
+
     .project h4 {
         margin: 20px 0;
     }
-    
+
     .project .description {
         font-size: 14px;
         color: #666;
     }
-    
+
     h4 img {
         height: 20px;
         width: 20px;
     }
-    
+
     h4 img:hover {
         cursor: pointer;
     }
-    
+
     /* ////////////////////////////////////////////////////////// */
     /* Experience & Education details */
     .Exdata {
@@ -1129,7 +1178,7 @@ h4 img:hover {
         grid-template-columns: repeat(1, 1fr);
         gap: 1px;
     }
-    
+
     .experienceDiv {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -1139,28 +1188,28 @@ h4 img:hover {
         /* padding: 10px; */
         background-color: rgb(250, 225, 192);
     }
-    
+
     .n {
         display: flex;
         align-items: center;
     }
-    
+
     .experienceDiv img {
         width: 10%;
         height: 100%;
     }
-    
+
     .experienceDiv b {
         align-items: center;
     }
-    
+
     .experience {
         padding: 10px;
         background-color: #b4f9fc;
         margin: 10px;
         border-radius: 5px;
     }
-    
+
     .educationDiv {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -1170,98 +1219,98 @@ h4 img:hover {
         padding: 10px;
         background-color: rgb(250, 225, 192);
     }
-    
+
     .n {
         display: flex;
         align-items: center;
     }
-    
+
     .educationDiv img {
         width: 10%;
         height: 100%;
     }
-    
+
     .educationDiv b {
         align-items: center;
     }
-    
+
     .education {
         padding: 10px;
         background-color: #b4f9fc;
         margin: 10px;
         border-radius: 5px;
     }
-    
+
     .year {
         font-size: small;
     }
-    
+
     .roleP {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         margin: 2px 2px 2px 0px;
         display: flex;
         justify-content: space-between;
     }
-    
+
     #percent {
         font-size: smaller;
     }
-    
+
     .company {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: small;
     }
 
     /* ////////////////////////////////////////////////////////// */
-/* Achievements Styling*/
+    /* Achievements Styling*/
 
-.achievements{
-    padding: 10px;
-    border-radius: 10px;
-    /* border: 0.5px solid #585656; */
-    /* background-color: rgb(210, 249, 151); */
-}
+    .achievements {
+        padding: 10px;
+        border-radius: 10px;
+        /* border: 0.5px solid #585656; */
+        /* background-color: rgb(210, 249, 151); */
+    }
 
-.skills-container {
-    overflow-x: auto; 
-    scroll-behavior: unset;
-    white-space: nowrap; 
-  }
-  
-  .skill-box {
-    display: inline-block;
-    align-items: center; 
-    padding: 5px;
-    margin: 5px;
-    border: 1px solid #cd6ffc;
-    border-radius: 10px;
-    text-align: center;
-    font-size:smaller;
-    font-style: oblique;
-    font-weight: bold;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
+    .skills-container {
+        overflow-x: auto;
+        scroll-behavior: unset;
+        white-space: nowrap;
+    }
 
-  .certificate-icon {
-    margin-right: 2px; 
-    width: 20px; 
-    height: 20px; 
-    position: relative;
-  }
+    .skill-box {
+        display: inline-block;
+        align-items: center;
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid #cd6ffc;
+        border-radius: 10px;
+        text-align: center;
+        font-size: smaller;
+        font-style: oblique;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
 
-  .skill-box:hover{
-    cursor: pointer;
-    border: 1px solid #ef791f;
-    box-shadow:2px 2px 7px #666;
-    background-color: rgb(179, 255, 255); 
-    transition: all ease-in-out 0.2s;
-  }
+    .certificate-icon {
+        margin-right: 2px;
+        width: 20px;
+        height: 20px;
+        position: relative;
+    }
 
-/* ////////////////////////////////////////////////////////// */
-    
+    .skill-box:hover {
+        cursor: pointer;
+        border: 1px solid #ef791f;
+        box-shadow: 2px 2px 7px #666;
+        background-color: rgb(179, 255, 255);
+        transition: all ease-in-out 0.2s;
+    }
+
+    /* ////////////////////////////////////////////////////////// */
+
     /* //////////////////////////////////////////////////////// */
     /* Contact Form */
-    
+
     .vertical-form {
         display: flex;
         flex-direction: column;
@@ -1270,12 +1319,12 @@ h4 img:hover {
         width: 100%;
         margin-left: 10px;
     }
-    
+
     .data form {
         border: 1px solid;
         margin-left: 20px;
     }
-    
+
     .connectiondata {
         display: flex;
         justify-content: start;
@@ -1285,32 +1334,32 @@ h4 img:hover {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         gap: 5px;
     }
-    
+
     .connectiondata p {
         font-size: 10px;
     }
-    
+
     .connectImg img {
         border-radius: 20px;
         padding: 10px;
         width: 95%;
         height: 90%;
     }
-    
+
     .vertical-form label {
         font-style: oblique;
         font-weight: bold;
     }
-    
+
     .vertical-form input {
         outline: none;
         height: 7%;
     }
-    
+
     .vertical-form textarea {
         outline: none;
     }
-    
+
     .vertical-form button {
         margin-top: 5px;
         border: 1px solid #f3f3f3;
@@ -1320,13 +1369,13 @@ h4 img:hover {
         background-color: rgb(156, 84, 224);
         border-radius: 20px 0px 20px 00px;
     }
-    
+
     .vertical-form button:hover {
         cursor: pointer;
         color: whitesmoke;
         box-shadow: 2px 2px 5px #403f3f;
     }
-    
+
     /* Footer Styling */
     .footer {
         height: 1.5%;
@@ -1335,22 +1384,22 @@ h4 img:hover {
         /* padding: 20px; */
         text-align: center;
     }
-    
+
     .footer-content p {
         margin: 0;
         color: #f3f3f3;
     }
-    
+
     .footer-content ul {
         list-style: none;
         padding: 0;
     }
-    
+
     .footer-content ul li {
         display: inline;
         margin: 0 10px;
     }
-    
+
     .footer-content ul li a {
         color: #f3f3f3;
         text-decoration: none;
