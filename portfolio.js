@@ -1,6 +1,6 @@
 
 const typingText = document.querySelector('.roll');
-const textArray = [ "MEAN Fullstack Developer", "Frontend Developer","UI/UX Designer", "Angular Developer", "React Developer" , "NodeJS Developer" , "Frontend Web Developer"]; 
+const textArray = [ "I'm MEAN Fullstack Developer", "I'm Frontend Developer","I'm UI/UX Designer", "I'm Angular Developer", "I'm React Developer" , "I'm NodeJS Developer" , "I'm Frontend Web Developer"]; 
 let currentText = 0;
 let charIndex = 0;
 
